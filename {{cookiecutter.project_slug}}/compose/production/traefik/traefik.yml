@@ -71,7 +71,7 @@ http:
           - url: http://django:5000
     {%- if cookiecutter.cloud_provider == 'nginx' %}
     django-media:
-      loadBalander:
+      loadBalancer:
         servers:
           - url: http://nginx:80
     {%- endif %}
